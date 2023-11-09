@@ -11,6 +11,7 @@ public class SupportNewDTO {
     private LocalDate voltaManutencao;
     private Integer contadorInicial;
     private Integer contadorAtual;
+    private String obs;
 
     public Integer getId() {
         return id;
@@ -60,14 +61,21 @@ public class SupportNewDTO {
         this.contadorAtual = contadorAtual;
     }
 
+    public String getObs() {return obs;}
+
+    public void setObs(String obs) {
+        this.obs = obs;
+    }
+
     public SupportNewDTO(Integer id, String printers, LocalDate idaManutencao, LocalDate voltaManutencao,
-                         Integer contadorInicial, Integer contadorAtual) {
+                         Integer contadorInicial, Integer contadorAtual, String obs) {
         this.id = id;
         this.printers = printers;
         this.idaManutencao = idaManutencao;
         this.voltaManutencao = voltaManutencao;
         this.contadorInicial = contadorInicial;
         this.contadorAtual = contadorAtual;
+        this.obs = obs;
     }
 
     public SupportNewDTO() {

@@ -1,4 +1,4 @@
-//package com.gralha.controlprinters.infra.security;
+//package com.gralha.controlprinters.security;
 //
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.context.annotation.Bean;
@@ -28,15 +28,10 @@
 //                .authorizeHttpRequests(authorize -> authorize
 //                        .requestMatchers(HttpMethod.POST, "/auth/login").permitAll()
 //                        .requestMatchers(HttpMethod.POST, "/auth/register").permitAll()
-//                        .requestMatchers(HttpMethod.POST, "/impressoras").permitAll() //.hasRole("ADMIN")
-//                        .requestMatchers(HttpMethod.PUT, "/impressoras").permitAll() //.hasRole("ADMIN")
-//                        .requestMatchers(HttpMethod.GET, "/impressoras").permitAll() //.hasRole("ADMIN")
-//                        .requestMatchers(HttpMethod.POST, "/usuarioimp").permitAll() //.hasRole("ADMIN")
-//                        .requestMatchers(HttpMethod.PUT, "/usuarioimp").permitAll() //.hasRole("ADMIN")
-//                        .requestMatchers(HttpMethod.GET, "/usuarioimp").permitAll() //.hasRole("ADMIN")
-//                        .requestMatchers(HttpMethod.POST, "/manutencao").permitAll() //.hasRole("ADMIN")
-//                        .requestMatchers(HttpMethod.PUT, "/manutencao").permitAll() //.hasRole("ADMIN")
-//                        .requestMatchers(HttpMethod.GET, "/manutencao").permitAll() //.hasRole("ADMIN")
+//                        .requestMatchers(HttpMethod.POST, "/impressoras").permitAll()  //.hasRole("ADMIN")
+//                        .requestMatchers(HttpMethod.POST, "/computadores").permitAll()  //.hasRole("ADMIN")
+//                        .requestMatchers(HttpMethod.POST, "/usuarios") .permitAll() //.hasRole("ADMIN")
+//                        .requestMatchers(HttpMethod.POST, "/manutencao") .permitAll() //.hasRole("ADMIN")
 //                        .anyRequest().authenticated()
 //                )
 //                .addFilterBefore(securityFilter, UsernamePasswordAuthenticationFilter.class)

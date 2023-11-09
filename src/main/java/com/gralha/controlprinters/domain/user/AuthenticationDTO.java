@@ -1,4 +1,4 @@
-//package com.gralha.controlprinters.models.user;
+//package com.gralha.controlprinters.domain.user;
 //
 //public record AuthenticationDTO(String login, String password) {
 //}

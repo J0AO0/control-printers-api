@@ -1,7 +1,6 @@
 package com.gralha.controlprinters.repositories;
 
-import com.gralha.controlprinters.models.PrintersModel;
-import com.gralha.controlprinters.models.SupportModel;
+import com.gralha.controlprinters.domain.SupportModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

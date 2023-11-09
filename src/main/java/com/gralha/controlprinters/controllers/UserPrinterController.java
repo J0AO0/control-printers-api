@@ -2,10 +2,14 @@ package com.gralha.controlprinters.controllers;
 
 import com.gralha.controlprinters.dtos.UserPrinterDTO;
 import com.gralha.controlprinters.dtos.UserPrinterNewDTO;
-import com.gralha.controlprinters.models.UserPrinterModel;
+import com.gralha.controlprinters.domain.UserPrinterModel;
+import com.gralha.controlprinters.repositories.UserPrinterRepository;
+import com.gralha.controlprinters.repositories.filter.UserPrinterFilter;
 import com.gralha.controlprinters.services.UserPrinterService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -21,6 +25,9 @@ public class UserPrinterController {
 
     @Autowired
     private UserPrinterService service;
+
+    @Autowired
+    private UserPrinterRepository repo;
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public ResponseEntity<?> find(@PathVariable Integer id) {
@@ -56,6 +63,12 @@ public class UserPrinterController {
                 path("/{id}").buildAndExpand(obj1.getId()).toUri();
         return ResponseEntity.created(uri).body(obj1);
 
+    }
+
+    @RequestMapping(value = "/filtro",method = RequestMethod.GET)
+    public ResponseEntity<?> findAll(UserPrinterFilter userPrinterFilter, Pageable pageable) {
+        Page<UserPrinterModel> pac = repo.filtrar(userPrinterFilter, pageable);
+        return ResponseEntity.ok().body(pac);
     }
 
 }

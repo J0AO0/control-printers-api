@@ -3,7 +3,7 @@ package com.gralha.controlprinters.services;
 
 import com.gralha.controlprinters.dtos.ComputerDTO;
 import com.gralha.controlprinters.dtos.ComputerNewDTO;
-import com.gralha.controlprinters.models.ComputerModel;
+import com.gralha.controlprinters.domain.ComputerModel;
 import com.gralha.controlprinters.repositories.ComputerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

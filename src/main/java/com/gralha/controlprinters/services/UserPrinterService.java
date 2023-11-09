@@ -1,14 +1,15 @@
 package com.gralha.controlprinters.services;
 
+import com.gralha.controlprinters.domain.SupportModel;
+import com.gralha.controlprinters.dtos.SupportDTO;
 import com.gralha.controlprinters.dtos.UserPrinterDTO;
 import com.gralha.controlprinters.dtos.UserPrinterNewDTO;
-import com.gralha.controlprinters.models.UserPrinterModel;
+import com.gralha.controlprinters.domain.UserPrinterModel;
 import com.gralha.controlprinters.repositories.UserPrinterRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.UUID;
 
 @Service
 public class UserPrinterService {
@@ -31,7 +32,12 @@ public class UserPrinterService {
         return repo.save(resEst);
     }
     public UserPrinterModel atualiza(UserPrinterDTO obj) {
-        UserPrinterModel resEst = new  UserPrinterModel(obj);
+        UserPrinterModel resEst =  repo.buscarPorId(obj.getId());
+        resEst.setStatus(obj.getStatus());
+        resEst.setEmail(obj.getEmail());
+        resEst.setNome(obj.getNome());
+        resEst.setSenha(obj.getSenha());
+
         return repo.save(resEst);
     }
     public void delete(Integer id) {

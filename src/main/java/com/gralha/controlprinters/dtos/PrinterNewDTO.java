@@ -9,6 +9,7 @@ public class PrinterNewDTO {
     private String toner;
     private String empresa;
     private Boolean status;
+    private String fornToner;
 
     public Integer getId() {
         return id;
@@ -66,7 +67,16 @@ public class PrinterNewDTO {
         this.status = status;
     }
 
-    public PrinterNewDTO(Integer id, String codigo, String setor, String ip, Boolean status, String toner, String empresa) {
+    public String getFornToner() {
+        return fornToner;
+    }
+
+    public void setFornToner(String fornToner) {
+        this.fornToner = fornToner;
+    }
+
+    public PrinterNewDTO(Integer id, String codigo, String setor, String ip, Boolean status, String toner, String empresa,
+    String fornToner ) {
         this.id = id;
         this.codigo = codigo;
         this.setor = setor;
@@ -74,6 +84,7 @@ public class PrinterNewDTO {
         this.toner = toner;
         this.status = status;
         this.empresa = empresa;
+        this.fornToner = fornToner;
     }
 
     public PrinterNewDTO() {

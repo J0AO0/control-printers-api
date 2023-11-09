@@ -1,6 +1,6 @@
-//package com.gralha.controlprinters.models.user;
+//package com.gralha.controlprinters.domain.user;
 //
-//public enum  UserRole {
+//public enum UserRole {
 //    ADMIN("admin"),
 //    USER("user");
 //

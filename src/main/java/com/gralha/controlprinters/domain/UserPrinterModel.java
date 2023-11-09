@@ -1,4 +1,4 @@
-package com.gralha.controlprinters.models;
+package com.gralha.controlprinters.domain;
 
 import com.gralha.controlprinters.dtos.UserPrinterDTO;
 import com.gralha.controlprinters.dtos.UserPrinterNewDTO;

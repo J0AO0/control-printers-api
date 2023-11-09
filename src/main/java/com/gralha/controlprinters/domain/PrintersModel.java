@@ -1,4 +1,4 @@
-package com.gralha.controlprinters.models;
+package com.gralha.controlprinters.domain;
 
 import com.gralha.controlprinters.dtos.PrinterDTO;
 import com.gralha.controlprinters.dtos.PrinterNewDTO;
@@ -6,7 +6,6 @@ import jakarta.persistence.*;
 
 
 import java.io.Serializable;
-
 
 
 @Entity
@@ -23,6 +22,7 @@ public class PrintersModel implements Serializable {
     private String ip;
     private String toner;
     private String empresa;
+    private String fornToner;
 
     private Boolean status = Boolean.TRUE;
 
@@ -82,7 +82,16 @@ public class PrintersModel implements Serializable {
         this.toner = toner;
     }
 
-    public PrintersModel(Integer id, String codigo, String setor, String ip, Boolean status, String toner, String empresa) {
+    public String getFornToner() {
+        return fornToner;
+    }
+
+    public void setFornToner(String fornToner) {
+        this.fornToner = fornToner;
+    }
+
+    public PrintersModel(Integer id, String codigo, String setor, String ip, Boolean status, String toner, String empresa,
+                         String fornToner) {
         this.id = id;
         this.codigo = codigo;
         this.setor = setor;
@@ -90,6 +99,7 @@ public class PrintersModel implements Serializable {
         this.status = status;
         this.toner = toner;
         this.empresa = empresa;
+        this.fornToner = fornToner;
     }
 
     public PrintersModel() {
@@ -103,6 +113,7 @@ public class PrintersModel implements Serializable {
         this.status = obj.getStatus();
         this.toner = obj.getToner();
         this.empresa = obj.getEmpresa();
+        this.fornToner = obj.getFornToner();
     }
     public PrintersModel(PrinterNewDTO obj) {
         this.id = null;
@@ -112,5 +123,6 @@ public class PrintersModel implements Serializable {
         this.status = obj.getStatus();
         this.toner = obj.getToner();
         this.empresa = obj.getEmpresa();
+        this.fornToner = obj.getFornToner();
     }
 }

@@ -1,12 +1,12 @@
 //package com.gralha.controlprinters.controllers;
 //
 //
-//import com.gralha.controlprinters.infra.security.TokenService;
-//import com.gralha.controlprinters.models.user.AuthenticationDTO;
-//import com.gralha.controlprinters.models.user.LoginResponseDTO;
-//import com.gralha.controlprinters.models.user.RegisterDTO;
-//import com.gralha.controlprinters.models.user.User;
+//import com.gralha.controlprinters.domain.user.AuthenticationDTO;
+//import com.gralha.controlprinters.domain.user.LoginResponseDTO;
+//import com.gralha.controlprinters.domain.user.RegisterDTO;
+//import com.gralha.controlprinters.domain.user.User;
 //import com.gralha.controlprinters.repositories.UserRepository;
+//import com.gralha.controlprinters.security.TokenService;
 //import jakarta.validation.Valid;
 //import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.http.ResponseEntity;

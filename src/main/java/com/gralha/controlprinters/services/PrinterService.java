@@ -2,7 +2,7 @@ package com.gralha.controlprinters.services;
 
 import com.gralha.controlprinters.dtos.PrinterDTO;
 import com.gralha.controlprinters.dtos.PrinterNewDTO;
-import com.gralha.controlprinters.models.PrintersModel;
+import com.gralha.controlprinters.domain.PrintersModel;
 import com.gralha.controlprinters.repositories.PrintersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -36,6 +36,7 @@ public class PrinterService {
         resEst.setStatus(obj.getStatus());
         resEst.setToner(obj.getToner());
         resEst.setEmpresa(obj.getEmpresa());
+        resEst.setFornToner(obj.getFornToner());
 
         return repo.save(resEst);
     }
