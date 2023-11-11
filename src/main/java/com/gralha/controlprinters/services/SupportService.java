@@ -1,7 +1,7 @@
 package com.gralha.controlprinters.services;
 
-import com.gralha.controlprinters.dtos.SupportDTO;
-import com.gralha.controlprinters.dtos.SupportNewDTO;
+import com.gralha.controlprinters.dtos.support.SupportDTO;
+import com.gralha.controlprinters.dtos.support.SupportNewDTO;
 import com.gralha.controlprinters.domain.SupportModel;
 import com.gralha.controlprinters.repositories.SupportRepository;
 import org.springframework.beans.factory.annotation.Autowired;

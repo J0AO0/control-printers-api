@@ -1,8 +1,8 @@
 package com.gralha.controlprinters.domain;
 
 
-import com.gralha.controlprinters.dtos.SupportDTO;
-import com.gralha.controlprinters.dtos.SupportNewDTO;
+import com.gralha.controlprinters.dtos.support.SupportDTO;
+import com.gralha.controlprinters.dtos.support.SupportNewDTO;
 import jakarta.persistence.*;
 
 

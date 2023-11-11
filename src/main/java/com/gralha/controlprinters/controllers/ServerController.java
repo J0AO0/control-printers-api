@@ -1,8 +1,8 @@
 package com.gralha.controlprinters.controllers;
 
 import com.gralha.controlprinters.domain.ServerModel;
-import com.gralha.controlprinters.dtos.ServerDTO;
-import com.gralha.controlprinters.dtos.ServerNewDTO;
+import com.gralha.controlprinters.dtos.server.ServerDTO;
+import com.gralha.controlprinters.dtos.server.ServerNewDTO;
 import com.gralha.controlprinters.services.ServerService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

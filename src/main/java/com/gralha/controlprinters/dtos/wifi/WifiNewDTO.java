@@ -1,6 +1,6 @@
-package com.gralha.controlprinters.dtos;
+package com.gralha.controlprinters.dtos.wifi;
 
-public class WifiDTO {
+public class WifiNewDTO {
     private Integer id;
     private String nome;
     private String empresa;
@@ -47,7 +47,7 @@ public class WifiDTO {
         this.equipamento = equipamento;
     }
 
-    public WifiDTO(Integer id, String nome, String empresa, String senha, String equipamento) {
+    public WifiNewDTO(Integer id, String nome, String empresa, String senha, String equipamento) {
         this.id = id;
         this.nome = nome;
         this.empresa = empresa;
@@ -55,6 +55,6 @@ public class WifiDTO {
         this.equipamento = equipamento;
     }
 
-    public WifiDTO() {
+    public WifiNewDTO() {
     }
 }

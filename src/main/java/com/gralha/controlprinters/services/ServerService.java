@@ -1,9 +1,8 @@
 package com.gralha.controlprinters.services;
 
-import com.gralha.controlprinters.domain.PrintersModel;
 import com.gralha.controlprinters.domain.ServerModel;
-import com.gralha.controlprinters.dtos.ServerDTO;
-import com.gralha.controlprinters.dtos.ServerNewDTO;
+import com.gralha.controlprinters.dtos.server.ServerDTO;
+import com.gralha.controlprinters.dtos.server.ServerNewDTO;
 import com.gralha.controlprinters.repositories.ServerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

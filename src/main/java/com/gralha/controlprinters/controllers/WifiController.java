@@ -1,8 +1,8 @@
 package com.gralha.controlprinters.controllers;
 
 import com.gralha.controlprinters.domain.WifiModel;
-import com.gralha.controlprinters.dtos.WifiDTO;
-import com.gralha.controlprinters.dtos.WifiNewDTO;
+import com.gralha.controlprinters.dtos.wifi.WifiDTO;
+import com.gralha.controlprinters.dtos.wifi.WifiNewDTO;
 import com.gralha.controlprinters.repositories.UserPrinterRepository;
 import com.gralha.controlprinters.services.WifiService;
 import jakarta.validation.Valid;

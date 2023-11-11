@@ -1,7 +1,7 @@
 package com.gralha.controlprinters.domain;
 
-import com.gralha.controlprinters.dtos.UserPrinterDTO;
-import com.gralha.controlprinters.dtos.UserPrinterNewDTO;
+import com.gralha.controlprinters.dtos.userPrinter.UserPrinterDTO;
+import com.gralha.controlprinters.dtos.userPrinter.UserPrinterNewDTO;
 import jakarta.persistence.*;
 
 import java.io.Serializable;

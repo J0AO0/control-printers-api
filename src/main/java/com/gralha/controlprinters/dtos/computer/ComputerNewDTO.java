@@ -1,6 +1,6 @@
-package com.gralha.controlprinters.dtos;
+package com.gralha.controlprinters.dtos.computer;
 
-public class ComputerDTO {
+public class ComputerNewDTO {
     private Integer id ;
     private String setor;
     private String computador;
@@ -65,7 +65,7 @@ public class ComputerDTO {
         this.empresa = empresa;
     }
 
-    public ComputerDTO(Integer id, String setor, String computador, String usuario, String so, String ip, String empresa) {
+    public ComputerNewDTO(Integer id, String setor, String computador, String usuario, String so, String ip, String empresa) {
         this.id = id;
         this.setor = setor;
         this.computador = computador;
@@ -74,6 +74,6 @@ public class ComputerDTO {
         this.ip = ip;
         this.empresa = empresa;
     }
-    public ComputerDTO() {
+    public ComputerNewDTO() {
     }
 }

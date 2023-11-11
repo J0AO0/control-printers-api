@@ -1,7 +1,7 @@
 package com.gralha.controlprinters.controllers;
 
-import com.gralha.controlprinters.dtos.UserPrinterDTO;
-import com.gralha.controlprinters.dtos.UserPrinterNewDTO;
+import com.gralha.controlprinters.dtos.userPrinter.UserPrinterDTO;
+import com.gralha.controlprinters.dtos.userPrinter.UserPrinterNewDTO;
 import com.gralha.controlprinters.domain.UserPrinterModel;
 import com.gralha.controlprinters.repositories.UserPrinterRepository;
 import com.gralha.controlprinters.repositories.filter.UserPrinterFilter;

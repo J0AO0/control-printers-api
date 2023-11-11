@@ -1,4 +1,4 @@
-package com.gralha.controlprinters.dtos;
+package com.gralha.controlprinters.dtos.server;
 
 public class ServerNewDTO {
     private Integer id ;

@@ -1,9 +1,9 @@
-package com.gralha.controlprinters.dtos;
+package com.gralha.controlprinters.dtos.support;
 
 
 import java.time.LocalDate;
 
-public class SupportNewDTO {
+public class SupportDTO {
 
     private Integer id;
     private String printers;
@@ -63,12 +63,10 @@ public class SupportNewDTO {
 
     public String getObs() {return obs;}
 
-    public void setObs(String obs) {
-        this.obs = obs;
-    }
+    public void setObs(String obs) {this.obs = obs;}
 
-    public SupportNewDTO(Integer id, String printers, LocalDate idaManutencao, LocalDate voltaManutencao,
-                         Integer contadorInicial, Integer contadorAtual, String obs) {
+    public SupportDTO(Integer id, String printers, LocalDate idaManutencao, LocalDate voltaManutencao,
+                      Integer contadorInicial, Integer contadorAtual, String obs) {
         this.id = id;
         this.printers = printers;
         this.idaManutencao = idaManutencao;
@@ -78,6 +76,6 @@ public class SupportNewDTO {
         this.obs = obs;
     }
 
-    public SupportNewDTO() {
+    public SupportDTO() {
     }
 }

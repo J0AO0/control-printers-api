@@ -1,8 +1,7 @@
 package com.gralha.controlprinters.domain;
 
-import com.gralha.controlprinters.dtos.ServerDTO;
-import com.gralha.controlprinters.dtos.WifiDTO;
-import com.gralha.controlprinters.dtos.WifiNewDTO;
+import com.gralha.controlprinters.dtos.wifi.WifiDTO;
+import com.gralha.controlprinters.dtos.wifi.WifiNewDTO;
 import jakarta.persistence.*;
 
 import java.io.Serializable;

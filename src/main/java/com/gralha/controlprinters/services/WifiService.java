@@ -1,12 +1,8 @@
 package com.gralha.controlprinters.services;
 
-import com.gralha.controlprinters.domain.UserPrinterModel;
 import com.gralha.controlprinters.domain.WifiModel;
-import com.gralha.controlprinters.dtos.UserPrinterDTO;
-import com.gralha.controlprinters.dtos.UserPrinterNewDTO;
-import com.gralha.controlprinters.dtos.WifiDTO;
-import com.gralha.controlprinters.dtos.WifiNewDTO;
-import com.gralha.controlprinters.repositories.UserPrinterRepository;
+import com.gralha.controlprinters.dtos.wifi.WifiDTO;
+import com.gralha.controlprinters.dtos.wifi.WifiNewDTO;
 import com.gralha.controlprinters.repositories.WifiRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

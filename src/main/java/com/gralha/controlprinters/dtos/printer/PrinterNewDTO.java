@@ -1,22 +1,22 @@
-package com.gralha.controlprinters.dtos;
+package com.gralha.controlprinters.dtos.printer;
 
 
-public class PrinterDTO {
+public class PrinterNewDTO {
     private Integer id;
     private String codigo;
     private String setor;
     private String ip;
     private String toner;
-    private Boolean status;
     private String empresa;
+    private Boolean status;
     private String fornToner;
 
     public Integer getId() {
         return id;
     }
 
-    public void setId(Integer uuid) {
-        this.id = uuid;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getCodigo() {
@@ -75,20 +75,18 @@ public class PrinterDTO {
         this.fornToner = fornToner;
     }
 
-    public PrinterDTO(Integer id, String codigo, String setor, String ip, Boolean status, String toner, String empresa,
-                      String fornToner) {
+    public PrinterNewDTO(Integer id, String codigo, String setor, String ip, Boolean status, String toner, String empresa,
+    String fornToner ) {
         this.id = id;
         this.codigo = codigo;
         this.setor = setor;
         this.ip = ip;
-        this.status = status;
         this.toner = toner;
+        this.status = status;
         this.empresa = empresa;
         this.fornToner = fornToner;
     }
 
-    public PrinterDTO() {
+    public PrinterNewDTO() {
     }
-
-
 }

@@ -1,4 +1,4 @@
-package com.gralha.controlprinters.dtos;
+package com.gralha.controlprinters.dtos.userPrinter;
 
 
 public class UserPrinterDTO {

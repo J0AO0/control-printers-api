@@ -1,6 +1,6 @@
 //package com.gralha.controlprinters.validations.printers;
 //
-//import com.gralha.controlprinters.dtos.PrinterNewDTO;
+//import com.gralha.controlprinters.dtos.printer.PrinterNewDTO;
 //import com.gralha.controlprinters.repositories.PrintersRepository;
 //import jakarta.validation.ConstraintValidator;
 //import jakarta.validation.ConstraintValidatorContext;
